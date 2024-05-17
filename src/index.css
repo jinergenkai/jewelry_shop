@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "EuclidIgnited";
+    /* src: url(./assets/novarese-medium.otf) format("OpenType"); */
+    /* src: url("./assets/EuclidCircular.ttf") format("truetype"); */
+    src: url("./assets/Euclid Circular A Light.ttf") format("truetype");
+    /* Add additional font formats if necessary */
+    /* Specify the correct path to the font files */
+  }
+}
+
+body {
+  font-family: "EuclidIgnited", "Jacquard 12";
+}
+
+:root {
+  --swiper-theme-color: #000;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
