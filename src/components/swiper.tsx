@@ -29,7 +29,7 @@ export default function SwiperComponent({
                 alt="image"
                 className="object-cover w-full h-[80vh]"
               ></img>
-              <div className="absolute z-20 text-5xl leading-9 text-left text-black left-32 bottom-56">
+              <div className="absolute z-20 text-5xl leading-9 text-left text-black left-32 bottom-32">
                 Phan Uyên Nhi
                 <br />
                 <span className="text-2xl">
@@ -42,7 +42,7 @@ export default function SwiperComponent({
                     href="https://www.facebook.com/nhi.phanuyen.9?locale=vi_VN"
                     target="blank"
                   >
-                  Follow em nhé
+                    Follow em nhé
                   </a>
                 </button>
               </div>

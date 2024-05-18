@@ -38,27 +38,22 @@ export default function Header() {
         <NavItem href="/">Home</NavItem>
         <NavItem href="/about">About</NavItem>
         <NavItem href="/contact">Contact</NavItem>
-        <NavItem href="/jewelrys">Jewelrys</NavItem>
+        <NavItem href="/jewelry">Jewelry</NavItem>
       </div>
     </div>
   ) : (
-    <div className="absolute sticky top-0 z-50 w-full text-black transition bg-white bg-opacity-100 duration-">
-
-      <div className="flex items-center justify-center pt-5">
-      <h1
-        className="inline-block pb-5 text-3xl"
-        ref={headerRef}
-      >
-        JEWELRY SHOPE
-      </h1>
+    <div className={`sticky top-0 z-50 w-full text-black transition duration-100 bg-white bg-opacity-100 border-b-4 border-[#f0eee4]`}>
+      <div className="flex items-center justify-between px-5">
+        <h1 className="inline-block py-4 text-3xl" ref={headerRef}>
+          JEWELRY SHOPE
+        </h1>
         {/* New in, jewelry watches accessories decorations gifts */}
-        <NavItem href="/">Home</NavItem>
-        <NavItem href="/about">About</NavItem>
-        <NavItem href="/contact">Contact</NavItem>
-        <NavItem href="/products">Products</NavItem>
-        <NavItem href="/blog">Blog</NavItem>
-        <NavItem href="/login">Login</NavItem>
-        <NavItem href="/register">Register</NavItem>
+        <div>
+          <NavItem href="/">Home</NavItem>
+          <NavItem href="/about">About</NavItem>
+          <NavItem href="/contact">Contact</NavItem>
+          <NavItem href="/jewelry">Jewelry</NavItem>
+        </div>
       </div>
     </div>
   );

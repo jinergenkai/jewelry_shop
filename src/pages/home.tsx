@@ -23,7 +23,7 @@ export default function Home() {
       ></SwiperComponent>
 
       {/* mau vang */}
-      <div className="bg-[#f0eee4] text-center py-10 text-3xl">
+      <div className={`bg-[#f0eee4]] text-center py-10 text-3xl`}>
         Masters of Light Since 1895
         <div className="p-10 text-xl">
           Since 1895, founder Daniel Swarovski’s passion for innovation and
