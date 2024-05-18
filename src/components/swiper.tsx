@@ -42,7 +42,7 @@ export default function SwiperComponent({
                     href="https://www.facebook.com/nhi.phanuyen.9?locale=vi_VN"
                     target="blank"
                   >
-                    Follow em nhé
+                    Follow Nhi nhé
                   </a>
                 </button>
               </div>
