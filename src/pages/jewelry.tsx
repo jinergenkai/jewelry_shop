@@ -64,7 +64,7 @@ export default function Jewelry() {
         <div className="grid grid-cols-2 gap-[2px] xl:grid-cols-4">
           {visibleProducts.map((item, index) => (
             <div key={index} className="col-span-1">
-              <GalleryCard key={index} image={item} href={"/"}/>
+              <GalleryCard key={index} image={item} href={"/detail-jewelry/1"}/>
             </div>
           ))}
         </div>

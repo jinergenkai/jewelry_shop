@@ -7,6 +7,7 @@ import AOS from "aos";
 import ServiceSection from "../components/service";
 
 export default function Home() {
+
   useEffect(() => {
     AOS.init({
       duration: 3000, // Animation duration

@@ -1,7 +1,8 @@
-import "./App.css";
+// import "./App.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/home";
 import Jewelry from "./pages/jewelry";
+import DetailJewelry from "./pages/detail-jewelry";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/jewelry",
     element: <Jewelry />,
+  },
+  {
+    path: "/detail-jewelry/:id",
+    element: <DetailJewelry/>,
   },
 ]);
 

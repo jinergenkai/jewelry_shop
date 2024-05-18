@@ -1,7 +1,5 @@
-import React from 'react';
-
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const DropdownMenu = ({ label, options }: { label: string; options: string[] }) => {
+const DropdownMenu = ({ label }: { label: string; options: string[] }) => {
   return (
     <div className="relative inline-block text-left">
       <div>
