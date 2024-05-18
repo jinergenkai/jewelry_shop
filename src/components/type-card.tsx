@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import AOS from 'aos';
+
 export default function BigCategoryCard({
   title,
   listImage,
@@ -5,12 +8,19 @@ export default function BigCategoryCard({
   title: string;
   listImage: string[];
 }) {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 3000, // Animation duration
+      // once: true, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
   return (
     <div className="py-10 text-3xl text-center bg-white">
       <div className="py-10 text-5xl text-center">{title}</div>
       <div className="flex justify-around">
         {listImage.map((image, index) => (
-          <div key={index} className="m-12 text-left">
+          <div key={index} className="m-12 text-left" data-aos="fade-up">
             <img
               src={image}
               alt="image_alt"

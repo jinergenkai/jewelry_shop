@@ -1,9 +1,18 @@
+import { useEffect } from "react";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import SwiperComponent from "../components/swiper";
 import BigCategoryCard from "../components/type-card";
+import AOS from "aos";
+import ServiceSection from "../components/service";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 3000, // Animation duration
+      // once: true, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
   return (
     <div className="relative ">
       <Header></Header>
@@ -25,6 +34,7 @@ export default function Home() {
 
       {/* Infinitely Inspiring */}
       <BigCategoryCard
+        key={1}
         title="Infinitely Inspiring"
         listImage={[
           "./test_image/3-removebg-preview.png",
@@ -39,8 +49,12 @@ export default function Home() {
           src="/test_image/7.jpg"
           alt="image_alt"
           className="object-cover w-[50%] h-full inline-block"
+          data-aos="fade-right"
         />
-        <div className="inline-block w-[50%] p-10 text-3xl">
+        <div
+          className="inline-block w-[50%] p-10 text-3xl"
+          data-aos="fade-left"
+        >
           <div className="m-32">
             <div className="py-3 text-4xl">The Art of Precision</div>
             <div className="text-base">
@@ -77,6 +91,7 @@ export default function Home() {
               src={image}
               alt="image_alt"
               className="object-cover w-full h-full"
+              data-aos={index % 2 === 0 ? "fade-down" : "fade-up"}
             />
             <div className="p-2 text-lg text-center bg-yellow-50">Category</div>
           </div>
@@ -91,19 +106,7 @@ export default function Home() {
           Swarovski as the leading jewelry and accessories brand.
         </div>
       </div>
-
-      {/* Infinitely Inspiring */}
-      <BigCategoryCard
-        title="Infinitely Inspiring"
-        listImage={[
-          "./test_image/3-removebg-preview.png",
-          "./test_image/2-removebg-preview.png",
-          "./test_image/6-removebg-preview.png",
-        ]}
-      ></BigCategoryCard>
-
-      <div className="h-[1000px]"></div>
-
+      <ServiceSection></ServiceSection>
       <Footer></Footer>
     </div>
   );

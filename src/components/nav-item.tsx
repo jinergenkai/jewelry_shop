@@ -2,7 +2,7 @@ export default function NavItem({ href, children } : { href: string, children: R
   return (
     <a
       href={href}
-      className="pb-5 mx-8 transition duration-300 ease-in-out hover:border-solid hover:border-b-4 hover:border-black"
+      className="pb-5 mx-8 ease-in-out hover:border-solid hover:border-b-4 hover:border-black"
     >
       {children}
     </a>
