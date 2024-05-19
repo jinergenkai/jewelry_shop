@@ -1,14 +1,17 @@
 import { useEffect } from "react";
-import AOS from 'aos';
+import AOS from "aos";
 
 export default function BigCategoryCard({
   title,
-  listImage,
+  item,
 }: {
   title: string;
-  listImage: string[];
+  item: {
+    title: string;
+    image: string;
+    description: string;
+  }[];
 }) {
-
   useEffect(() => {
     AOS.init({
       duration: 3000, // Animation duration
@@ -19,18 +22,16 @@ export default function BigCategoryCard({
     <div className="py-10 text-3xl text-center bg-white">
       <div className="py-10 text-5xl text-center">{title}</div>
       <div className="flex justify-around">
-        {listImage.map((image, index) => (
+        {item.map((item, index) => (
           <div key={index} className="m-12 text-left" data-aos="fade-up">
             <img
-              src={image}
+              src={item.image}
               alt="image_alt"
-              className="w-full border-2 border-solid border_black"
+              className="object-cover w-full border-2 border-solid border_black h-[600px]"
             />
-            <div className="my-8">Dây chuyền</div>
+            <div className="my-8">{item.title}</div>
             <div className="text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              a eligendi deserunt delectus distinctio iure magni explicabo neque
-              Vòng tay, Bông Tai
+              {item.description}
             </div>
             {/* <div className="my-4">
               <a href="/shop" className="text-lg underline underline-offset-8">

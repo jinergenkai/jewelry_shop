@@ -23,12 +23,13 @@ export default function Home() {
       ></SwiperComponent>
 
       {/* mau vang */}
-      <div className={`bg-[#f0eee4]] text-center py-10 text-3xl`}>
+      <div className={`bg-[#f0eee4] text-center pt-10 text-3xl`}>
         Pha Lê - Vẻ Đẹp Kiêu Sa
         <div className="p-10 text-xl">
           Pha lê không chỉ là biểu tượng của vẻ đẹp tinh khiết
-          <br/>
-          mà còn là sự lựa chọn hoàn hảo cho những ai muốn toát lên vẻ sang trọng.
+          <br />
+          mà còn là sự lựa chọn hoàn hảo cho những ai muốn toát lên vẻ sang
+          trọng.
         </div>
       </div>
 
@@ -36,10 +37,25 @@ export default function Home() {
       <BigCategoryCard
         key={1}
         title="Cảm hứng vô tận"
-        listImage={[
-          "./test_image/3-removebg-preview.png",
-          "./test_image/2-removebg-preview.png",
-          "./test_image/6-removebg-preview.png",
+        item={[
+          {
+            image: "./test_image/3-removebg-preview.png",
+            title: "Vòng Tay",
+            description:
+              "Được làm từ những viên đá SWAN cao cấp, Mỗi viên đá được lựa chọn kỹ lưỡng, đảm bảo chất lượng và độ tinh khiết cao nhất, mang lại vẻ đẹp hoàn mỹ cho trang sức. Thiết kế của dây chuyền vừa tinh tế và sự chú trọng đến từng chi tiết nhỏ.",
+          },
+          {
+            image: "./test_image/2-removebg-preview.png",
+            title: "Bông Tai",
+            description:
+              "SWAN không chỉ là biểu tượng của sự sang trọng và thanh lịch, mà còn thể hiện cá tính và gu thẩm mỹ riêng biệt của người đeo. Đá SWAN được chọn lọc kỹ lưỡng, tỏa sáng với phản chiếu ánh sáng một cách hoàn hảo để tôn lên vẻ đẹp của làn da.",
+          },
+          {
+            image: "./test_image/6-removebg-preview.png",
+            title: "Dây Chuyền",
+            description:
+              "chính hãng mang đến vẻ đẹp tinh tế và sang trọng, phù hợp với mọi phong cách thời trang.  Bông tai có thiết kế đa dạng, từ kiểu dáng cổ điển đến hiện đại, đảm bảo bạn sẽ tìm thấy một cặp phù hợp với cá tính của mình.",
+          },
         ]}
       ></BigCategoryCard>
 
@@ -56,19 +72,22 @@ export default function Home() {
           data-aos="fade-left"
         >
           <div className="m-32">
-            <div className="py-3 text-4xl">Đá Swan</div>
-            <div className="text-base">
-              Welcome to the future of diamond jewelry.
+            <div className="py-3 text-4xl">
+              Đá SWAN Cao Cấp
               <br />
-              The Swarovski Created Diamond jewelry collection radiates
-              otherworldly wonder, featuring beautiful lab grown diamonds that
-              are identical to their mined counterparts in every way but how
-              they originate.
+              Lựa Chọn Đẳng Cấp
+            </div>
+            <div className="text-xl">
+              Đá SWAN - vẻ đẹp hoàn mỹ, chất lượng vượt trội, từ mỏ đá hàng đầu.
+              Lựa chọn sang trọng, bền vững theo thời gian cho mọi công trình.
+              Kết hợp nét đẹp tự nhiên và tính năng hiện đại, đá SWAN đảm bảo sự
+              sang trọng và ứng dụng cao. Giá cực kỳ ưu đãi, cơ hội nâng cấp
+              không gian sống và làm việc với sản phẩm đá cao cấp.
             </div>
             {/* <br />
-            <a href="/shop" className="text-base underline underline-offset-8">
-            Tìm hiểu thêm
-            </a> */}
+        <a href="/shop" className="text-base underline underline-offset-8">
+        Tìm hiểu thêm
+        </a> */}
           </div>
         </div>
       </div>
@@ -97,9 +116,9 @@ export default function Home() {
       {/* divider */}
       <div className="bg-[#f0eee4] text-center py-10 text-3xl">
         <div className="p-10 text-xl">
-          Since 1895, founder Daniel Swarovski’s passion for innovation and
-          design, and mastery of crystal cutting has defined <br />
-          Swarovski as the leading jewelry and accessories brand.
+          Hãy để SWAN Stones ghi dấu ấn cá nhân của bạn qua từng viên đá quý và
+          thiết kế tự thân. <br/>Khám phá bộ sưu tập của chúng tôi và bắt đầu hành
+          trình tạo nên sự khác biệt của riêng bạn!
         </div>
       </div>
       {/* <ServiceSection></ServiceSection> */}

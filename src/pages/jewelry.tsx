@@ -16,7 +16,7 @@ export default function Jewelry() {
       .then((response) => response.json())
       .then((data) => {
         setProducts(data);
-        setVisibleProducts(data.slice(0, 16));
+        setVisibleProducts(data.slice(0, 32));
       })
       .catch((error) =>
         console.error("Error fetching the image paths:", error)
@@ -55,7 +55,7 @@ export default function Jewelry() {
             <i>{products.length} Results</i>
           </div>
           <DropdownMenu
-            label="Price Range"
+            label="Sort by"
             options={["Option 1", "Option 2", "Option 3"]}
           />
         </div>
