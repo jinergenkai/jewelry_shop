@@ -20,7 +20,7 @@ export default function About() {
           className="inline-block w-[70%] p-10 text-3xl"
           data-aos="fade-left"
         >
-          <div className="m-4">
+          <div className="m-20">
             <div className="py-3 text-4xl">
               Chào mừng đến với
               <br />
@@ -36,12 +36,6 @@ export default function About() {
               phẩm của chúng tôi không chỉ là một món trang sức, mà còn là một
               tác phẩm nghệ thuật được chế tác tỉ mỉ, phản ánh phong cách và cá
               tính riêng biệt của người đeo.
-            </div>
-            <div className="text-2xl font-normal">
-              <br />
-              Liên hệ trực tuyến với shop qua zalo
-              <br />
-              <span className="font-dejaVuSerif">Số điện thoại hỗ trợ: 0358820162</span>
             </div>
             {/* <br />
             <a href="/shop" className="text-base underline underline-offset-8">

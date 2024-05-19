@@ -42,7 +42,8 @@ export default function Jewelry() {
       <Header />
       {/* banner swiper */}
       <SwiperComponent
-        listImage={["/banner.png", "/banner1.png"]}
+        // listImage={["/banner.png", "/banner1.png"]}
+        listImage={["/banner.mp4", "/banner.mp4"]}
       ></SwiperComponent>
 
       <div className="bg-[#FFE2EB] px-1 py-3 xl:px-56">

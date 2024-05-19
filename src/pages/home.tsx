@@ -19,7 +19,8 @@ export default function Home() {
 
       {/* banner swiper */}
       <SwiperComponent
-        listImage={["/banner.png", "/banner1.png"]}
+        // listImage={["/banner.png", "/banner1.png"]}
+        listImage={["/banner.mp4", "/banner.mp4"]}
       ></SwiperComponent>
 
       {/* mau vang */}
