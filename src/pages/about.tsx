@@ -38,9 +38,9 @@ export default function About() {
               tính riêng biệt của người đeo.
             </div>
             <div className="text-2xl font-normal">
-              <br/>
-              Chat trực tuyến với Hiền
-              <br/>
+              <br />
+              Chat trực tuyến với shop qua zalo
+              <br />
               Số điện thoại hỗ trợ: 0358820162
             </div>
             {/* <br />

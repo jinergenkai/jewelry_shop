@@ -3,35 +3,44 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import { useEffect, useState } from "react";
 
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+  description: string;
+  images: string[];
+}
+
 export default function DetailJewelry() {
-  const { id } = useParams<{ id: string }>();
-  const [images, setImages] = useState([]);
+  const { name } = useParams<{ name: string }>();
+  const [images, setImages] = useState([] as string[]);
 
   const [selectedImage, setSelectedImage] = useState("/images/ring1.jpg");
+
+  // const [product, setProduct] = useState<Product | null>(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
     fetch("/image_paths.json")
       .then((response) => response.json())
       .then((data) => {
-        setImages(
-          data.reduce((acc: string[], item: string) => {
-            if (item.includes(`${id}`)) {
-              acc.push(item);
-            }
-            return acc;
-          }, [])
+        const currentProduct = (data as Product[]).find(
+          (product) => product.name === name
         );
+        console.log("currentProduct", currentProduct);
+
+        setImages(currentProduct?.images || []);
+        setSelectedImage(currentProduct?.images[0] || "");
       })
       .catch((error) =>
         console.error("Error fetching the image paths:", error)
       );
-  }, []);
+  }, [name]);
 
   return (
     <>
       <Header />
-      <div className="flex p-8 bg-gray-100">
+      <div className="flex bg-gray-100 p-28">
         {/* Image List */}
         <div className="flex flex-col gap-4">
           {images.map((image, index) => (
@@ -48,23 +57,28 @@ export default function DetailJewelry() {
         </div>
 
         {/* Main Image */}
-        <div className="flex items-center justify-center flex-1 p-8">
+        <div className="flex justify-center flex-1 p-8 items-top">
           <img
             src={selectedImage}
             alt="Selected Ring"
-            className="h-auto max-w-full"
+            className="max-w-full w-[70%] h-[70%]"
           />
         </div>
 
         {/* Ring Details */}
-        <div className="p-4 bg-white rounded-lg shadow-lg w-96">
+        <div className="p-10 bg-white rounded-lg shadow-lg w-[500px] h-[100%] align-top">
+          <p className="mt-4 mb-1 text-xl">Sản phẩm</p>
           <h1 className="mb-2 text-2xl font-semibold">
-            Eternity solitaire ring
+            {name?.replace(/-/g, " ")}
           </h1>
           <p className="text-gray-600">
-            Laboratory grown diamonds 0.2 ct tw, 18K white gold
+            Biểu tượng của đẳng cấp và phong cách cá nhân.
+            <br />
+            <br />
+            Với thiết kế hiện đại, sản phẩm này tôn lên vẻ đẹp và sự tự tin,
+            mang lại niềm vui và hạnh phúc cho người sở hữu.
           </p>
-          <p className="mt-4 mb-6 text-xl font-semibold">¥ 143,000</p>
+          {/* <p className="mt-4 mb-6 text-xl font-semibold">¥ 143,000</p>
 
           <div className="mb-4">
             <h3 className="text-lg font-medium">Color</h3>
@@ -121,14 +135,14 @@ export default function DetailJewelry() {
                 </label>
               </div>
             </div>
-          </div>
+          </div> */}
+          <button className="w-full py-2 mt-4 text-xl text-white bg-black rounded-lg">
 
-          <button className="w-full py-2 mt-4 text-white bg-black rounded-lg">
-            Notify me
+            Liên hệ đặt hàng <br/> 0358820162
           </button>
-          <p className="mt-4 text-center text-gray-600">
+          {/* <p className="mt-4 text-center text-gray-600">
             Free standard shipping over ¥ 18,000.
-          </p>
+          </p> */}
         </div>
       </div>
       <Footer />

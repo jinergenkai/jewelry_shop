@@ -3,7 +3,7 @@ import { Heart, HeartFill } from "react-bootstrap-icons";
 import AOS from "aos";
 import { Link } from "react-router-dom";
 
-export default function GalleryCard({ image , href}: { image: string; href: string}) {
+export default function GalleryCard({ image, name , href}: { image: string; name: string; href: string}) {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration
@@ -33,7 +33,7 @@ export default function GalleryCard({ image , href}: { image: string; href: stri
 
       <div className="p-8 text-xs">
         <div className="my-2 text-gray-500">New collection</div>
-        <div className="font-bold">Eternity band ring</div>
+        <div className="font-bold">{name}</div>
         {/* <div className="font-normal">Laboratory grown diamonds</div>
         <div className="mt-4 font-semibold">6,789,000 vnđ</div> */}
       </div>

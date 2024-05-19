@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     element: <Jewelry />,
   },
   {
-    path: "/detail-jewelry/:id",
+    path: "/detail-jewelry/:name",
     element: <DetailJewelry />,
   },
   {

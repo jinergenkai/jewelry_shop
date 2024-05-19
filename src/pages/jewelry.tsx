@@ -62,9 +62,9 @@ export default function Jewelry() {
 
         {/* gallery */}
         <div className="grid grid-cols-2 gap-[2px] xl:grid-cols-4">
-          {visibleProducts.map((item, index) => (
+          {visibleProducts.map((item: {"name": string; "images": Array<string>}, index: number) => (
             <div key={index} className="col-span-1">
-              <GalleryCard key={index} image={item} href={"/detail-jewelry/1"}/>
+              <GalleryCard key={index} image={item.images[0]} href={`/detail-jewelry/${item.name}`} name={item?.name}/>
             </div>
           ))}
         </div>
