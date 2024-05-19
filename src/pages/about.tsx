@@ -41,7 +41,7 @@ export default function About() {
               <br />
               Liên hệ trực tuyến với shop qua zalo
               <br />
-              Số điện thoại hỗ trợ: 0358820162
+              <span className="font-dejaVuSerif">Số điện thoại hỗ trợ: 0358820162</span>
             </div>
             {/* <br />
             <a href="/shop" className="text-base underline underline-offset-8">

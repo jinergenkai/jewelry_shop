@@ -72,8 +72,8 @@ export default function Home() {
           data-aos="fade-left"
         >
           <div className="m-32">
-            <div className="py-3 text-4xl">
-              Đá SWAN Cao Cấp
+            <div className="py-3 text-4xl font-dejaVuSerif">
+              <span>Đá SWAN Cao Cấp</span>
               <br />
               Lựa Chọn Đẳng Cấp
             </div>
@@ -117,8 +117,9 @@ export default function Home() {
       <div className="bg-[#FFE2EB] text-center py-10 text-3xl">
         <div className="p-10 text-xl">
           Hãy để SWAN Stones ghi dấu ấn cá nhân của bạn qua từng viên đá quý và
-          thiết kế tự thân. <br/>Khám phá bộ sưu tập của chúng tôi và bắt đầu hành
-          trình tạo nên sự khác biệt của riêng bạn!
+          thiết kế tự thân. <br />
+          Khám phá bộ sưu tập của chúng tôi và bắt đầu hành trình tạo nên sự
+          khác biệt của riêng bạn!
         </div>
       </div>
       {/* <ServiceSection></ServiceSection> */}

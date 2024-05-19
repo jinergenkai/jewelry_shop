@@ -38,6 +38,9 @@
 body {
   font-family: "bogart","DejaVuSerif",sans-serif;
   overflow-x: hidden;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+
 }
 
 :root {

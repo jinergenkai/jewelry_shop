@@ -29,8 +29,8 @@ export default function SwiperComponent({
                 alt="image"
                 className="object-cover w-full h-[80vh]"
               ></img>
-              <div className="absolute z-20 text-5xl leading-snug leading-9 text-left text-black left-32 bottom-40">
-                <div>Crystal - Quyến Rũ Mọi Ánh Nhìn</div>
+              <div className="absolute z-20 text-5xl leading-snug leading-9 text-left text-black left-32 bottom-40 font-dejaVuSerif">
+                <div className="my-6">Crystal - Quyến Rũ Mọi Ánh Nhìn</div>
                 <div className="text-2xl">
                   Crystal không chỉ đơn thuần là đá quý,
                   <br />

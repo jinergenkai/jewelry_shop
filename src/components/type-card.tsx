@@ -20,7 +20,7 @@ export default function BigCategoryCard({
   }, []);
   return (
     <div className="py-10 text-3xl text-center bg-white">
-      <div className="py-10 text-5xl text-center">{title}</div>
+      <div className="py-10 text-5xl text-center font-dejaVuSerif">{title}</div>
       <div className="flex justify-around">
         {item.map((item, index) => (
           <div key={index} className="m-12 text-left" data-aos="fade-up">
@@ -29,7 +29,7 @@ export default function BigCategoryCard({
               alt="image_alt"
               className="object-cover w-full border-2 border-solid border_black h-[600px]"
             />
-            <div className="my-8">{item.title}</div>
+            <div className="my-8 font-dejaVuSerif">{item.title}</div>
             <div className="text-lg">
               {item.description}
             </div>

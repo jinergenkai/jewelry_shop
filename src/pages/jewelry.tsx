@@ -50,12 +50,12 @@ export default function Jewelry() {
         <FilterCard />
 
         {/* sort by */}
-        <div className="flex justify-between m-4">
+        <div className="flex justify-between m-4 font-dejaVuSerif">
           <div>
             <i>{products.length} Results</i>
           </div>
           <DropdownMenu
-            label="Sort by"
+            label="Sắp xếp theo"
             options={["Option 1", "Option 2", "Option 3"]}
           />
         </div>
@@ -68,7 +68,7 @@ export default function Jewelry() {
             </div>
           ))}
         </div>
-        <div className="m-4 text-xs text-center">Showing {visibleProducts.length} of {products.length} products</div>
+        <div className="m-4 text-xs text-center font-dejaVuSerif">Hiện có {visibleProducts.length} trên {products.length} products</div>
         <div className="w-40 h-[1px] bg-black m-auto"></div>
 
         {loadMoreVisible && (
@@ -76,7 +76,7 @@ export default function Jewelry() {
             className="block px-16 py-1 m-auto my-4 text-sm text-white bg-black border-2 border-black border-solid hover:text-black hover:bg-transparent hover:border-solid hover:border-2 hover:border-black"
             onClick={loadMore}
           >
-            show more
+            Hiện thêm
             {/* <a href="" target="blank">
             show more
           </a> */}

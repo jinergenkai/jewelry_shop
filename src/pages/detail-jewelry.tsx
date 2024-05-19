@@ -68,7 +68,7 @@ export default function DetailJewelry() {
         {/* Ring Details */}
         <div className="p-10 bg-white rounded-lg shadow-lg w-[500px] h-[100%] align-top">
           <p className="mt-4 mb-1 text-xl">Sản phẩm</p>
-          <h1 className="mb-2 text-2xl font-semibold">
+          <h1 className="mb-2 text-2xl font-semibold font-dejaVuSerif">
             {name?.replace(/-/g, " ")}
           </h1>
           <p className="text-gray-600">
@@ -138,7 +138,10 @@ export default function DetailJewelry() {
           </div> */}
           <button className="w-full py-2 mt-4 text-xl text-white bg-black rounded-lg">
 
-            Liên hệ đặt hàng <br/> 0358820162
+            Liên hệ đặt hàng <br/> 
+            
+            <span className="font-dejaVuSerif">0358820162</span>
+
           </button>
           {/* <p className="mt-4 text-center text-gray-600">
             Free standard shipping over ¥ 18,000.

@@ -54,7 +54,7 @@ const Footer = () => {
       <div className="text-center align-top">
         Liên hệ trực tuyến với shop qua zalo
         <br />
-        Số điện thoại hỗ trợ: 0358820162
+        <span className="font-dejaVuSerif">Số điện thoại hỗ trợ: 0358820162</span>
       </div>
       <div className="container px-4 pt-4 mx-auto mt-4 text-center border-t border-gray-700">
         <p className="text-sm">
