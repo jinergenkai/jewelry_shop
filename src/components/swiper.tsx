@@ -40,7 +40,7 @@ export default function SwiperComponent({
                 Your browser does not support the video tag.
               </video>
 
-              <div className="absolute z-20 text-5xl leading-snug leading-9 text-left text-black left-32 bottom-40 font-dejaVuSerif">
+              <div className="absolute z-20 text-5xl leading-9 text-left text-black left-32 bottom-40">
                 <div className="my-6">Crystal - Quyến Rũ Mọi Ánh Nhìn</div>
                 <div className="text-2xl">
                   Crystal không chỉ đơn thuần là đá quý,
