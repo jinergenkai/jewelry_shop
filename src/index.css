@@ -8,20 +8,35 @@
     /* src: url(./assets/novarese-medium.otf) format("OpenType"); */
     /* src: url("./assets/EuclidCircular.ttf") format("truetype"); */
     /* src: url("./assets/Euclid Circular A Light.ttf") format("truetype"); */
-    /* src: url("./assets/LS-Babylon.ttf") format("truetype"); */
-    src: url("SVN-Peristiwa.otf") format("OpenType");
+    src: url("./assets/LS-Babylon.ttf") format("truetype");
+    /* src: url("SVN-Peristiwa.otf") format("OpenType"); */
     /* Add additional font formats if necessary */
     /* Specify the correct path to the font files */
   }
 
   @font-face {
     font-family: "Peristiwa";
-    src: url("SVN-Peristiwa.otf") format("OpenType");
+    src: url("./assets/SVN-Peristiwa.otf") format("OpenType");
+  }
+
+  @font-face {
+    font-family: "Manhattan";
+    src: url("./assets/LS-Babylon.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "DejaVuSerif";
+    src: url("./assets/DejaVuSerif.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "bogart";
+    src: url("./assets/Bogart-Light-trial.ttf") format("truetype");
+
   }
 }
 
 body {
-  font-family: "Montserrat","Peristiwa", sans-serif;
+  font-family: "DejaVuSerif",sans-serif;
   overflow-x: hidden;
 }
 

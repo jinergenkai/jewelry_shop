@@ -15,7 +15,7 @@ export default function About() {
     <div className="relative ">
       <Header></Header>
       {/* image with title left, right */}
-      <div className="bg-[#f0eee4]">
+      <div className="bg-[#FFE2EB]">
         <div
           className="inline-block w-[70%] p-10 text-3xl"
           data-aos="fade-left"
@@ -39,7 +39,7 @@ export default function About() {
             </div>
             <div className="text-2xl font-normal">
               <br />
-              Chat trực tuyến với shop qua zalo
+              Liên hệ trực tuyến với shop qua zalo
               <br />
               Số điện thoại hỗ trợ: 0358820162
             </div>

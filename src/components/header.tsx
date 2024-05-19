@@ -25,9 +25,9 @@ export default function Header() {
 
   if (location.pathname.includes("/detail-jewelry")) {
     return (
-      <div className="top-0 z-50 w-full text-black transition duration-200 bg-[#f0eee4]">
+      <div className="top-0 z-50 w-full text-black transition duration-200 bg-[#FFE2EB]">
         <h1
-          className="ml-[50%] mt-10 translate-x-[-50%] inline-block text-8xl"
+          className="ml-[50%] mt-10 translate-x-[-50%] inline-block text-8xl font-manhattan"
           ref={headerRef}
         >
           SWAN Ice Elegance
@@ -46,7 +46,7 @@ export default function Header() {
   return !isScrolled && location.pathname === "/" ? (
     <div className="absolute top-0 z-50 w-full text-white transition duration-200 bg-black bg-opacity-20 hover:bg-opacity-100 hover:bg-white hover:text-black">
       <h1
-        className="ml-[50%] mt-10 translate-x-[-50%] inline-block text-7xl"
+        className="ml-[50%] mt-10 translate-x-[-50%] inline-block text-7xl font-manhattan"
         ref={headerRef}
       >
         SWAN Ice Elegance
@@ -61,10 +61,10 @@ export default function Header() {
     </div>
   ) : (
     <div
-      className={`sticky top-0 z-50 w-full text-black transition duration-100 bg-white bg-opacity-100 border-b-2 border-[#f0eee4]`}
+      className={`sticky top-0 z-50 w-full text-black transition duration-100 bg-white bg-opacity-100 border-b-2 border-[#FFE2EB]`}
     >
       <div className="flex items-center justify-between px-5">
-        <h1 className="inline-block py-4 text-3xl" ref={headerRef}>
+        <h1 className="inline-block py-4 text-3xl font-manhattan" ref={headerRef} font-ơ>
           SWAN Ice Elegance
         </h1>
         {/* New in, jewelry watches accessories decorations gifts */}

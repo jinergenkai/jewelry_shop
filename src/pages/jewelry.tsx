@@ -45,7 +45,7 @@ export default function Jewelry() {
         listImage={["/banner.png", "/banner1.png"]}
       ></SwiperComponent>
 
-      <div className="bg-[#f0eee4] px-1 py-3 xl:px-56">
+      <div className="bg-[#FFE2EB] px-1 py-3 xl:px-56">
         {/* filter */}
         <FilterCard />
 

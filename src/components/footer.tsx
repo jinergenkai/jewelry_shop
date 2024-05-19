@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
       </div> */}
       <div className="text-center align-top">
-        Chat trực tuyến với shop qua zalo
+        Liên hệ trực tuyến với shop qua zalo
         <br />
         Số điện thoại hỗ trợ: 0358820162
       </div>

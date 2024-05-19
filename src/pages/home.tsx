@@ -23,7 +23,7 @@ export default function Home() {
       ></SwiperComponent>
 
       {/* mau vang */}
-      <div className={`bg-[#f0eee4] text-center pt-10 text-3xl`}>
+      <div className={`bg-[#FFE2EB] text-center pt-10 text-3xl`}>
         Pha Lê - Vẻ Đẹp Kiêu Sa
         <div className="p-10 text-xl">
           Pha lê không chỉ là biểu tượng của vẻ đẹp tinh khiết
@@ -60,7 +60,7 @@ export default function Home() {
       ></BigCategoryCard>
 
       {/* image with title left, right */}
-      <div className="bg-[#f0eee4]">
+      <div className="bg-[#FFE2EB]">
         <img
           src="/test_image/7.jpg"
           alt="image_alt"
@@ -114,7 +114,7 @@ export default function Home() {
       </div> */}
 
       {/* divider */}
-      <div className="bg-[#f0eee4] text-center py-10 text-3xl">
+      <div className="bg-[#FFE2EB] text-center py-10 text-3xl">
         <div className="p-10 text-xl">
           Hãy để SWAN Stones ghi dấu ấn cá nhân của bạn qua từng viên đá quý và
           thiết kế tự thân. <br/>Khám phá bộ sưu tập của chúng tôi và bắt đầu hành

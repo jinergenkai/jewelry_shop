@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Helvetica', 'Arial', 'sans-serif'],
+        serif: ['Georgia', 'serif'],
+        mono: ['Menlo', 'monospace'],
+        manhattan: ['Manhattan', 'sans-serif'],
+        dejaVuSerif: ['DejaVuSerif', 'serif'],
+        bogart: ['bogart', 'serif'],
+      },
+    },
   },
   plugins: [],
 }

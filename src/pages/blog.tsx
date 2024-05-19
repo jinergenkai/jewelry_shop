@@ -15,7 +15,7 @@ export default function Blog() {
     <div className="relative ">
       <Header></Header>
       {/* image with title left, right */}
-      <div className="bg-[#f0eee4]">
+      <div className="bg-[#FFE2EB]">
         <div
           className="inline-block w-[60%] p-10 text-3xl align-top"
           data-aos="fade-left"
@@ -53,7 +53,7 @@ export default function Blog() {
       </div>
 
 
-      <div className="bg-[#f0eee4]">
+      <div className="bg-[#FFE2EB]">
       <img
           src="/test_image/6.jpg"
           alt="image_alt"
