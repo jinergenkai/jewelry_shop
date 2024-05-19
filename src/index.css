@@ -7,14 +7,21 @@
     font-family: "EuclidIgnited";
     /* src: url(./assets/novarese-medium.otf) format("OpenType"); */
     /* src: url("./assets/EuclidCircular.ttf") format("truetype"); */
-    src: url("./assets/Euclid Circular A Light.ttf") format("truetype");
+    /* src: url("./assets/Euclid Circular A Light.ttf") format("truetype"); */
+    /* src: url("./assets/LS-Babylon.ttf") format("truetype"); */
+    src: url("SVN-Peristiwa.otf") format("OpenType");
     /* Add additional font formats if necessary */
     /* Specify the correct path to the font files */
+  }
+
+  @font-face {
+    font-family: "Peristiwa";
+    src: url("SVN-Peristiwa.otf") format("OpenType");
   }
 }
 
 body {
-  font-family: "EuclidIgnited", "Jacquard 12";
+  font-family: "Montserrat","Peristiwa", sans-serif;
   overflow-x: hidden;
 }
 

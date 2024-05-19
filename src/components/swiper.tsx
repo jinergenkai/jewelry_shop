@@ -29,22 +29,16 @@ export default function SwiperComponent({
                 alt="image"
                 className="object-cover w-full h-[80vh]"
               ></img>
-              <div className="absolute z-20 text-5xl leading-9 text-left text-black left-32 bottom-60">
-              Collection Pha Lê
-                <br />
-                <span className="text-2xl">
-                  Đẹp từng viên pha lê
-                </span>
-                {/* <br />
-                <br /> */}
-                {/* <button className="px-16 py-1 text-xl text-white bg-black border-2 border-black border-solid hover:text-black hover:bg-transparent hover:border-solid hover:border-2 hover:border-black ">
-                  <a
-                    href="https://www.facebook.com/nhi.phanuyen.9?locale=vi_VN"
-                    target="blank"
-                  >
-                    Follow Nhi nhé
-                  </a>
-                </button> */}
+              <div className="absolute z-20 text-5xl leading-snug leading-9 text-left text-black left-32 bottom-40">
+                <div>Crystal - Quyến Rũ Mọi Ánh Nhìn</div>
+                <div className="text-2xl">
+                  Crystal không chỉ đơn thuần là đá quý,
+                  <br />
+                  chúng còn là biểu tượng của vẻ đẹp tinh khiết và sự quyến rũ.
+                </div>
+                <button className="px-16 py-1 text-xl text-white bg-black border-2 border-black border-solid hover:text-black hover:bg-transparent hover:border-solid hover:border-2 hover:border-black ">
+                  <a href="/jewelry">Xem thêm</a>
+                </button>
               </div>
             </div>
           </SwiperSlide>

@@ -7,7 +7,6 @@ import AOS from "aos";
 // import ServiceSection from "../components/service";
 
 export default function Home() {
-
   useEffect(() => {
     AOS.init({
       duration: 3000, // Animation duration
@@ -25,11 +24,11 @@ export default function Home() {
 
       {/* mau vang */}
       <div className={`bg-[#f0eee4]] text-center py-10 text-3xl`}>
-        Masters of Light Since 1895
+        Pha Lê - Vẻ Đẹp Kiêu Sa
         <div className="p-10 text-xl">
-          Since 1895, founder Daniel Swarovski’s passion for innovation and
-          design, and mastery of crystal cutting has defined <br />
-          Swarovski as the leading jewelry and accessories brand.
+          Pha lê không chỉ là biểu tượng của vẻ đẹp tinh khiết
+          <br/>
+          mà còn là sự lựa chọn hoàn hảo cho những ai muốn toát lên vẻ sang trọng.
         </div>
       </div>
 

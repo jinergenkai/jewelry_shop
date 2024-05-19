@@ -1,7 +1,6 @@
-
 const Footer = () => {
   return (
-    <footer className="py-8 text-white bg-black">
+    <footer className="py-4 text-white bg-black">
       {/* <div className="container flex flex-wrap justify-between px-4 mx-auto">
         <div className="w-full mb-6 sm:w-1/2 md:w-1/4">
           <h3 className="mb-2 text-lg font-bold">CUSTOMER SERVICE & FAQ</h3>
@@ -52,9 +51,19 @@ const Footer = () => {
           </ul>
         </div>
       </div> */}
+      <div className="text-center align-top">
+        Chat trực tuyến với shop qua zalo
+        <br />
+        Số điện thoại hỗ trợ: 0358820162
+      </div>
       <div className="container px-4 pt-4 mx-auto mt-4 text-center border-t border-gray-700">
-        <p className="text-sm">&copy; 2024 Swan Ice Elegance. All rights reserved.</p>
-        <p className="text-sm">Swan Ice and the SWAN logo are registered trademarks of Swan ice elegance.</p>
+        <p className="text-sm">
+          &copy; 2024 Swan Ice Elegance. All rights reserved.
+        </p>
+        <p className="text-sm">
+          Swan Ice and the SWAN logo are registered trademarks of Swan ice
+          elegance.
+        </p>
       </div>
       <div className="container mx-auto mt-4 text-center">
         <div className="flex justify-center space-x-4">
@@ -64,14 +73,14 @@ const Footer = () => {
           <a href="" className="text-xl text-white"><i className="fab fa-youtube"></i></a>
           <a href="" className="text-xl text-white"><i className="fab fa-tiktok"></i></a>
           <a href="" className="text-xl text-white"><i className="fab fa-xing"></i></a> */}
-          
+
           <i className="text-xl text-white fab fa-facebook-f"></i>
           <i className="text-xl text-white fab fa-pinterest-p"></i>
           <i className="text-xl text-white fab fa-instagram"></i>
           <i className="text-xl text-white fab fa-youtube"></i>
           <i className="text-xl text-white fab fa-tiktok"></i>
         </div>
-      </div>  
+      </div>
     </footer>
   );
 };
