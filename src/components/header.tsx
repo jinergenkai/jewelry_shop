@@ -31,11 +31,11 @@ export default function Header() {
           className="ml-[50%] mt-10 translate-x-[-50%] inline-block text-8xl"
           ref={headerRef}
         >
-          JEWELRY SHOPE
+          SWAN Ice Elegance
         </h1>
         <div className="flex items-center justify-center pt-10">
           {/* New in, jewelry watches accessories decorations gifts */}
-          <NavItem href="/">Home</NavItem>
+          <NavItem href="/">Trang Chủ</NavItem>
           <NavItem href="/about">About</NavItem>
           <NavItem href="/contact">Contact</NavItem>
           <NavItem href="/jewelry">Jewelry</NavItem>
@@ -47,16 +47,16 @@ export default function Header() {
   return !isScrolled && (location.pathname === "/") ? (
     <div className="absolute top-0 z-50 w-full text-white transition duration-200 bg-black bg-opacity-20 hover:bg-opacity-100 hover:bg-white hover:text-black">
       <h1
-        className="ml-[50%] mt-10 translate-x-[-50%] inline-block text-8xl"
+        className="ml-[50%] mt-10 translate-x-[-50%] inline-block text-7xl"
         ref={headerRef}
       >
-        JEWELRY SHOPE
+        SWAN Ice Elegance
       </h1>
       <div className="flex items-center justify-center pt-10">
         {/* New in, jewelry watches accessories decorations gifts */}
-        <NavItem href="/">Home</NavItem>
-        <NavItem href="/about">About</NavItem>
-        <NavItem href="/contact">Contact</NavItem>
+        <NavItem href="/">Trang Chủ</NavItem>
+        <NavItem href="/about">Về</NavItem>
+        <NavItem href="/contact">Liên hệ</NavItem>
         <NavItem href="/jewelry">Jewelry</NavItem>
       </div>
     </div>
@@ -64,11 +64,11 @@ export default function Header() {
     <div className={`sticky top-0 z-50 w-full text-black transition duration-100 bg-white bg-opacity-100 border-b-2 border-[#f0eee4]`}>
       <div className="flex items-center justify-between px-5">
         <h1 className="inline-block py-4 text-3xl" ref={headerRef}>
-          JEWELRY SHOPE
+          SWAN Ice Elegance
         </h1>
         {/* New in, jewelry watches accessories decorations gifts */}
         <div>
-          <NavItem href="/">Home</NavItem>
+          <NavItem href="/">Trang Chủ</NavItem>
           <NavItem href="/about">About</NavItem>
           <NavItem href="/contact">Contact</NavItem>
           <NavItem href="/jewelry">Jewelry</NavItem>

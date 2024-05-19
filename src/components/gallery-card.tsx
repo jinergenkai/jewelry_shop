@@ -32,10 +32,10 @@ export default function GalleryCard({ image , href}: { image: string; href: stri
       </div>
 
       <div className="p-8 text-xs">
-        <div className="my-2 text-gray-500">New</div>
+        <div className="my-2 text-gray-500">New collection</div>
         <div className="font-bold">Eternity band ring</div>
-        <div className="font-normal">Laboratory grown diamonds</div>
-        <div className="mt-4 font-semibold">6,789,000 vnđ</div>
+        {/* <div className="font-normal">Laboratory grown diamonds</div>
+        <div className="mt-4 font-semibold">6,789,000 vnđ</div> */}
       </div>
       </Link>
     </div>

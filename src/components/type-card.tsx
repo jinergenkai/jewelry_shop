@@ -26,17 +26,17 @@ export default function BigCategoryCard({
               alt="image_alt"
               className="w-full border-2 border-solid border_black"
             />
-            <div className="my-8">Radiant Necklaces</div>
+            <div className="my-8">Dây chuyền</div>
             <div className="text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
               a eligendi deserunt delectus distinctio iure magni explicabo neque
-              saepe sunt.
+              Vòng tay, Bông Tai
             </div>
-            <div className="my-4">
+            {/* <div className="my-4">
               <a href="/shop" className="text-lg underline underline-offset-8">
                 Radiant Necklaces
               </a>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>

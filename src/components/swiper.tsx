@@ -29,22 +29,22 @@ export default function SwiperComponent({
                 alt="image"
                 className="object-cover w-full h-[80vh]"
               ></img>
-              <div className="absolute z-20 text-5xl leading-9 text-left text-black left-32 bottom-32">
-                Phan Uyên Nhi
+              <div className="absolute z-20 text-5xl leading-9 text-left text-black left-32 bottom-60">
+              Collection Pha Lê
                 <br />
                 <span className="text-2xl">
-                  lorem ipsum dolor sit amet, consectetur
+                  Đẹp từng viên pha lê
                 </span>
-                <br />
-                <br />
-                <button className="px-16 py-1 text-xl text-white bg-black border-2 border-black border-solid hover:text-black hover:bg-transparent hover:border-solid hover:border-2 hover:border-black ">
+                {/* <br />
+                <br /> */}
+                {/* <button className="px-16 py-1 text-xl text-white bg-black border-2 border-black border-solid hover:text-black hover:bg-transparent hover:border-solid hover:border-2 hover:border-black ">
                   <a
                     href="https://www.facebook.com/nhi.phanuyen.9?locale=vi_VN"
                     target="blank"
                   >
                     Follow Nhi nhé
                   </a>
-                </button>
+                </button> */}
               </div>
             </div>
           </SwiperSlide>
