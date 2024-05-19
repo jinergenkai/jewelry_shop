@@ -9,7 +9,7 @@ export default function Jewelry() {
       <Header />
       {/* banner swiper */}
       <SwiperComponent
-        listImage={["/banner1.png", "/banner.png"]}
+        listImage={["/banner.png", "/banner1.png"]}
       ></SwiperComponent>
 
       <div className="bg-[#f0eee4] px-36 py-4">
