@@ -1,13 +1,11 @@
-import React from 'react';
-
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const DropdownMenu = ({ label, options }: { label: string; options: string[] }) => {
+const DropdownMenu = ({ label }: { label: string; options: string[] }) => {
   return (
     <div className="relative inline-block text-left">
       <div>
         <button
           type="button"
-          className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
+          className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-50 focus:ring-1"
           id="menu-button"
           aria-expanded="true"
           aria-haspopup="true"

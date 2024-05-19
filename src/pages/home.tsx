@@ -4,9 +4,10 @@ import Header from "../components/header";
 import SwiperComponent from "../components/swiper";
 import BigCategoryCard from "../components/type-card";
 import AOS from "aos";
-import ServiceSection from "../components/service";
+// import ServiceSection from "../components/service";
 
 export default function Home() {
+
   useEffect(() => {
     AOS.init({
       duration: 3000, // Animation duration
@@ -23,7 +24,7 @@ export default function Home() {
       ></SwiperComponent>
 
       {/* mau vang */}
-      <div className="bg-[#f0eee4] text-center py-10 text-3xl">
+      <div className={`bg-[#f0eee4]] text-center py-10 text-3xl`}>
         Masters of Light Since 1895
         <div className="p-10 text-xl">
           Since 1895, founder Daniel Swarovski’s passion for innovation and
@@ -35,7 +36,7 @@ export default function Home() {
       {/* Infinitely Inspiring */}
       <BigCategoryCard
         key={1}
-        title="Infinitely Inspiring"
+        title="Cảm hứng vô tận"
         listImage={[
           "./test_image/3-removebg-preview.png",
           "./test_image/2-removebg-preview.png",
@@ -56,7 +57,7 @@ export default function Home() {
           data-aos="fade-left"
         >
           <div className="m-32">
-            <div className="py-3 text-4xl">The Art of Precision</div>
+            <div className="py-3 text-4xl">Đá Swan</div>
             <div className="text-base">
               Welcome to the future of diamond jewelry.
               <br />
@@ -65,20 +66,16 @@ export default function Home() {
               are identical to their mined counterparts in every way but how
               they originate.
             </div>
-            <br />
+            {/* <br />
             <a href="/shop" className="text-base underline underline-offset-8">
-              Shopee now
-            </a>
-            <br />
-            <a href="/shop" className="text-base underline underline-offset-8">
-              Discover more
-            </a>
+            Tìm hiểu thêm
+            </a> */}
           </div>
         </div>
       </div>
 
       {/* shop by category */}
-      <div className="py-10 text-5xl text-center">Shop by Category</div>
+      {/* <div className="py-10 text-5xl text-center">Shop by Category</div>
       <div className="flex justify-center m-2">
         {[
           "/test_image/11.jpg",
@@ -96,7 +93,7 @@ export default function Home() {
             <div className="p-2 text-lg text-center bg-yellow-50">Category</div>
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* divider */}
       <div className="bg-[#f0eee4] text-center py-10 text-3xl">
@@ -106,7 +103,7 @@ export default function Home() {
           Swarovski as the leading jewelry and accessories brand.
         </div>
       </div>
-      <ServiceSection></ServiceSection>
+      {/* <ServiceSection></ServiceSection> */}
       <Footer></Footer>
     </div>
   );
