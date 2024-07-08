@@ -40,19 +40,19 @@ export default function Home() {
         title="Cảm hứng vô tận"
         item={[
           {
-            image: "./test_image/3-removebg-preview.png",
+            image: "./jewelry_banner/1.jpg",
             title: "Vòng Tay",
             description:
               "Được làm từ những viên đá SWAN cao cấp, Mỗi viên đá được lựa chọn kỹ lưỡng, đảm bảo chất lượng và độ tinh khiết cao nhất, mang lại vẻ đẹp hoàn mỹ cho trang sức. Thiết kế của dây chuyền vừa tinh tế và sự chú trọng đến từng chi tiết nhỏ.",
           },
           {
-            image: "./test_image/2-removebg-preview.png",
+            image: "./jewelry_banner/2.jpg",
             title: "Bông Tai",
             description:
               "SWAN không chỉ là biểu tượng của sự sang trọng và thanh lịch, mà còn thể hiện cá tính và gu thẩm mỹ riêng biệt của người đeo. Đá SWAN được chọn lọc kỹ lưỡng, tỏa sáng với phản chiếu ánh sáng một cách hoàn hảo để tôn lên vẻ đẹp của làn da.",
           },
           {
-            image: "./test_image/6-removebg-preview.png",
+            image: "./jewelry_banner/3.jpg",
             title: "Dây Chuyền",
             description:
               "chính hãng mang đến vẻ đẹp tinh tế và sang trọng, phù hợp với mọi phong cách thời trang.  Bông tai có thiết kế đa dạng, từ kiểu dáng cổ điển đến hiện đại, đảm bảo bạn sẽ tìm thấy một cặp phù hợp với cá tính của mình.",
@@ -63,7 +63,7 @@ export default function Home() {
       {/* image with title left, right */}
       <div className="bg-[#FFE2EB]">
         <img
-          src="/test_image/7.jpg"
+          src="./jewelry_banner/4.jpg"
           alt="image_alt"
           className="object-cover w-[50%] h-full inline-block"
           data-aos="fade-right"
